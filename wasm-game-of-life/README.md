@@ -1,3 +1,5 @@
+https://rustwasm.github.io/docs/book/game-of-life/hello-world.html
+
 ```
 cargo generate --git https://github.com/rustwasm/wasm-pack-template
 ```
