@@ -7,3 +7,7 @@ cargo generate --git https://github.com/rustwasm/wasm-pack-template
 ```
 rustup target add wasm32-unknown-unknown
 ```
+
+```
+export NODE_OPTIONS=--openssl-legacy-provider
+```
