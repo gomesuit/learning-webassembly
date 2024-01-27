@@ -1,0 +1,14 @@
+<html>
+  <body>
+    <script>
+      const go = new Go();
+      WebAssembly.instantiateStreaming(fetch("dist/hello.wasm"), go.importObject).then((result) => {
+        go.run(result.instance);
+      });
+      function runHelloWorld() {
+        helloWorld();
+      }
+    </script>
+    <button onclick="runHelloWorld()">Run Hello World</button>
+  </body>
+</html>
