@@ -1,5 +1,6 @@
 <html>
   <body>
+    <script src="dist/wasm_exec.js"></script>
     <script>
       const go = new Go();
       WebAssembly.instantiateStreaming(fetch("dist/hello.wasm"), go.importObject).then((result) => {
